@@ -3,7 +3,7 @@
     "version": "1.0",
     "description": "Ekşi Sözlükteki Başlıkları PDF Dosyası Olarak Kaydedin!",
     "manifest_version": 2,
-    "page_action": {
+    "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
           "16": "images/icon.png",
@@ -17,5 +17,10 @@
         "32": "images/icon.png",
         "48": "images/icon.png",
         "128": "images/icon.png"
+      },
+      "permissions": ["declarativeContent", "storage"],
+      "background": {
+        "scripts": ["background.js"],
+        "persistent": false
       }
   }
